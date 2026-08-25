@@ -38,7 +38,7 @@ if not exist "dist\index.html" (
 echo [3/3] Creating desktop shortcut...
 set "TARGET=%~dp0SUTRA-IDE.bat"
 set "LNK=%USERPROFILE%\Desktop\SUTRA IDE.lnk"
-powershell -NoProfile -Command "$s = (New-Object -ComObject WScript.Shell).CreateShortcut('%LNK%'); $s.TargetPath = '%TARGET%'; $s.WorkingDirectory = '%~dp0'; $s.IconLocation = '%~dp0SUTRA-IDE.exe,0'; $s.Save()" >nul 2>nul
+powershell -NoProfile -Command "$s = (New-Object -ComObject WScript.Shell).CreateShortcut('%LNK%'); $s.TargetPath = '%TARGET%'; $s.WorkingDirectory = '%~dp0'; $s.IconLocation = '%~dp0sutra.ico'; $s.Save()" >nul 2>nul
 if exist "%LNK%" (echo       Desktop shortcut created.) else (echo       Shortcut skipped — you can run SUTRA-IDE.bat directly.)
 
 echo.

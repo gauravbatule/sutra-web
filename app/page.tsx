@@ -59,7 +59,7 @@ export default function Home() {
             NIM and Ollama — bring API keys or just session cookies.
           </p>
           <div className={styles.actions}>
-            <a className={styles.primaryBtn} href="/downloads/SUTRA-IDE-Setup.zip" download>
+            <a className={styles.primaryBtn} href="https://github.com/gauravbatule/sutra-web/releases/latest/download/SUTRA-IDE-Setup-1.0.0.exe">
               Download for Windows
             </a>
             <a className={styles.secondaryBtn} href="#open-source">

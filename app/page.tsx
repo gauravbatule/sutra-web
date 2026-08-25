@@ -36,7 +36,7 @@ export default function Home() {
           <nav className={styles.navLinks} aria-label="Primary">
             <a href="#features">Features</a>
             <a href="#download">Download</a>
-            <a href="#open-source">Open Source</a>
+            <a href="#open-source">Roadmap</a>
             <a
               href="https://buymeacoffee.com/gauravbatule"
               target="_blank"
@@ -51,7 +51,7 @@ export default function Home() {
 
       <main>
         <section className={`container ${styles.hero}`} id="download">
-          <span className={styles.badge}>Open source · MIT licensed · Free forever</span>
+          <span className={styles.badge}>Free forever · Open source coming soon</span>
           <h1 className={styles.heroTitle}>The AI-native IDE that builds with you</h1>
           <p className={styles.heroSub}>
             A chat-first IDE where Astra, your built-in agent, plans and ships real work alongside
@@ -84,19 +84,14 @@ export default function Home() {
         </section>
 
         <section className={`container ${styles.oss}`} id="open-source">
-          <h2 className={styles.sectionTitle}>Open source</h2>
+          <h2 className={styles.sectionTitle}>Open source — soon</h2>
           <p className={styles.ossBody}>
-            SUTRA is MIT licensed. Read the code, fork it, ship your own build.
+            SUTRA goes open source in a few weeks under the MIT license. The full codebase —
+            the Astra agent, the multi-model router, the tool system, and the scheduler — will
+            be published here. Watch this space.
           </p>
-          <pre className={styles.code}>
-            <code>{`git clone https://github.com/your-org/sutra.git
-cd sutra
-npm install
-npm run dev`}</code>
-          </pre>
           <p className={styles.ossNote}>
-            Requires Node.js 20+. The server starts on port 3001 with the agent, tools, and
-            scheduler wired in.
+            The Windows installer below already contains everything and works today.
           </p>
         </section>
       </main>
